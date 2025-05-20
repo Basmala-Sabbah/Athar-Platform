@@ -1,0 +1,254 @@
+@import'./base.css';
+
+body{
+    font-family: var(--mainFont);
+    background-color: #eee;
+}
+
+.header{
+    background-color: #fff;
+}
+
+.header .logo{
+    display: flex;
+    align-items: center;
+    gap:5px;
+}
+
+.header .logo img{
+    width: 90px;
+}
+
+.header .logo a{
+    color:#1565C0;
+    margin-top: 17px;
+    font-weight: 700;
+}
+
+
+.header .nav ul{
+    display: flex;
+    gap: 50px;
+    margin-top: 15px;
+}
+
+.nav ul li a{
+    color: #101928;
+    font-weight: 700;
+}
+
+.nav ul li a:hover{
+    color: #1565C0;
+    border-bottom:4px solid #000;
+}
+
+.auth{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 15px;
+}
+
+
+.auth a{
+    font-family: var(--sunFont);
+    border-radius: 10px;
+    padding: 5.3541765213012695px 30.18113136291504px;
+}
+
+
+
+.auth .Login {
+    border: 2px solid var(--mainColor);
+    color: var(--mainColor);
+    font-weight: 700;
+}
+
+.auth .Register{
+    color: #fff;
+    background-color: var(--mainColor);
+    border: 2px solid var(--mainColor);
+    font-weight: 700;
+}
+
+.Login:hover{
+    color: #fff;
+    background-color: #1565C0;
+}
+.Register:hover{
+    color:#1565C0;
+    background-color: #fff;
+}
+
+
+
+
+
+/*Header Section*/
+.j{
+    height: 722px;
+    background-color: #7aa1cd;
+}
+
+.he1{
+ display: flex;
+ align-items: center;
+ gap: 50px;
+}
+
+.part1 h1{
+    font-size: 70px;
+    text-shadow: 10px 2px 5px rgba(0, 0, 0, 0.3);
+    width: 80%;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1.2s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+ .part1 span{
+    color:#e2e2e4;
+ }
+
+ .part2 img{
+    width: 700px;
+    border-radius: 50%;
+    border: #000 4px solid;
+    margin-top: 50px;
+    cursor: pointer;
+    background-color: #F0C932;
+}
+
+.slide-down {
+  opacity: 0;
+  transform: translateY(-40px);
+  animation: slideDown 1.2s ease-out forwards;
+  animation-delay: 1s; /* حتى تجي بعد النص بشوي */
+}
+
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+  .part1 p{
+    font-size: 30px;
+    line-height: 3rem;
+    word-spacing: 2px;
+    margin-top: 20px;
+    color: #e4e2e2;
+ }
+
+ .fade-left {
+  opacity: 0;
+  transform: translateX(-30px);
+  animation: fadeInLeft 1.2s ease-out forwards;
+  animation-delay: 0.5s; 
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+.Register2{
+     color: #000000;
+    background-color:#1565C0;
+    border: 2px solid var(--mainColor);
+    font-weight: 700;
+    font-family: var(--sunFont);
+    border-radius: 10px;
+    padding: 10px 40px;
+}
+
+.Register2:hover{
+    color:#1565C0;
+    background-color: #fff;
+}
+
+.bottons{
+    margin-top: 50px;
+}
+
+.slide-buttons {
+  opacity: 0;
+  transform: translateX(-40px);
+  animation: slideInLeft 1s ease-out forwards;
+  animation-delay: 1.8s; /* بعد الفقرة والصورة */
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* أضف شوية ستايل للزرين عشان يطلعوا فنانين */
+.btn-group button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-group button:hover {
+  background-color: #0056b3;
+}
+
+
+.botton2{
+    margin-left: 30px;
+}
+
+.botton2 i{
+    background-color: #F0C932;
+    color: #fff;
+    padding: 15px;
+    border-radius: 50%;
+}
+.bottons span{
+    font-weight: 600;
+    color: #000;
+    font-size: 20px;
+    margin-left: 5px;
+}
